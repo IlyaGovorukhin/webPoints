@@ -3,6 +3,45 @@ block title
     title Page1
 block content
      .page
+             .page_canvas#page_canvas
+                 canvas(width='800' height='600')#canvas-font
+             .page_tools
+                 ul.page_tools-ul
+                     li
+                         .page_tools-tools
+                             .page_tools-tools-tools Tools
+                             #pensil.sizet &#9998
+                             #erasel.sizet &#xb0
+                             input(type ='button' value="Move" )#page_tools-tools-move
+
+                     li
+                         .page_tools-size
+                             .page_tools-size-size Size
+                             .page_tools-size-block
+                                     details(open)
+                                        summary Size
+                                        #big Big
+                                        #middle middle
+                                        #small small
+
+                     li
+                         .page_tools-color
+                             .page_tools-color-color Color
+                             input(type='color')#color
+                     li
+                         #page_tools-propertis
+                             .page_tools-propertis-propertis Image
+                             label Width
+                             input(type ='number' value="0"  min = '0')#page_tools-propertis-width
+                             label Height
+                             input(type ='number' value="0"  min = '0')#page_tools-propertis-height
+                             input(type='button' value='invert')#page_tools-propertis-invert
+
+
+
+
+
+
 
 
 
